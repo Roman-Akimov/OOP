@@ -1,18 +1,21 @@
 package functions;
 
 public class FunctionPoint {
-	double x, y;
+	private double x, y;
 	
+	// конструктор с параметрами
 	public FunctionPoint(double x, double y){
 		this.x = x;
 		this.y = y;
 	}
 	
+	// конструктор копирования
 	public FunctionPoint(FunctionPoint point) {
 		x = point.x;
 		y = point.y;
 	}
 	
+	// конструктор по умолчанию
 	public FunctionPoint() {
 		x = y = 0;
 	}
